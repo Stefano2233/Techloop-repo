@@ -1,0 +1,112 @@
+/* Aggiungi un po' di margine e padding alla pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Sfondo globale */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f4f7fc, #d3e0e9); /* Gradient di sfondo */
+    height: 100vh;  /* Impostiamo altezza della finestra */
+    display: flex;
+    justify-content: center;   /* Centra orizzontalmente */
+    align-items: center;       /* Centra verticalmente */
+  }
+  
+  /* Contenitore del form */
+  .main-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 16px;  /* Angoli più arrotondati */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);  /* Ombra più marcata */
+    width: 100%;
+    max-width: 600px;  /* Larghezza massima per schermi più larghi */
+    text-align: center;
+    transition: all 0.3s ease-in-out;  /* Transizione fluida */
+  }
+  
+  /* Effetto hover per il contenitore */
+  .main-container:hover {
+    transform: translateY(-5px);  /* Sposta leggermente il contenitore verso l'alto */
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);  /* Aumenta l'ombra per un effetto 3D */
+  }
+  
+  /* Titolo principale */
+  .main-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 700;  /* Grassetto per il titolo */
+    letter-spacing: 1px;  /* Aumenta la distanza tra le lettere */
+  }
+  
+  /* Descrizione o sottotitolo */
+  .main-container p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+  
+  /* Bottone principale */
+  .main-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;  /* Angoli arrotondati */
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;  /* Transizione fluida */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Ombra del bottone */
+  }
+  
+  /* Effetto hover per il bottone */
+  .main-container button:hover {
+    background-color: #45a049;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Aumenta l'ombra al passaggio */
+    transform: translateY(-3px);  /* Sposta leggermente il bottone verso l'alto */
+  }
+  
+  /* Aggiungi uno spazio per il contenuto principale */
+  .main-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Input campi */
+  .main-container input {
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .main-container input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+  }
+  
+  /* Etichette input */
+  .main-container label {
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  
+  /* Messaggio di errore (se presente) */
+  .main-container .error {
+    color: red;
+    font-size: 12px;
+    margin-top: -8px;
+    margin-bottom: 16px;
+  }
+  

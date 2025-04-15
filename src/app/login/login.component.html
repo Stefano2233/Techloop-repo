@@ -1,0 +1,17 @@
+<div class="login-form">
+    <h2>Accedi</h2>
+    <form (ngSubmit)="onClick()">
+      <div>
+        <label for="nome">Nome:</label>
+        <input id="nome"  name="nome" type="text" [(ngModel)]="_nome" required>
+      </div>
+      <div>
+        <label for="cognome">Cognome:</label>
+        <input id="cognome"  name="cognome" type="text"  [(ngModel)]="_cognome" required>
+      </div>
+      <button type="submit" (click)="navigateToDashboard($event)">Cliccami</button>
+    </form>
+  </div>
+
+
+

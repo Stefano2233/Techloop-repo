@@ -1,0 +1,89 @@
+/* Stili per la barra header */
+.header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+  padding-right: 1rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.user-info:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.user-info span {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #ffffff;
+  margin-left: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+/* Stili per la lista di navigazione nella barra header */
+.header nav ul {
+  list-style-type: none;  /* Rimuove i puntini o numeri dalla lista */
+  display: flex;  /* Usa il Flexbox per disporre i link in orizzontale */
+  gap: 15px;  /* Aggiunge uno spazio tra gli elementi della lista (link) */
+}
+
+/* Stili per i link di navigazione nella barra header */
+.header nav a {
+  color: white;  /* Colore dei link */
+  text-decoration: none;  /* Rimuove la sottolineatura dai link */
+}
+
+/* Stili per i link quando il mouse passa sopra */
+.header nav a:hover {
+  text-decoration: underline;  /* Aggiunge una sottolineatura ai link quando il mouse è sopra */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    padding: 0 1rem;
+  }
+
+  .header-title {
+    font-size: 1.2rem;
+  }
+
+  .user-info {
+    max-width: 200px;
+    padding: 0.5rem 1rem;
+  }
+}
+

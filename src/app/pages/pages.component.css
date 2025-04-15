@@ -1,0 +1,9 @@
+.content {
+    margin-left: 270px; /* To create space for the sidebar */
+    padding: 20px;
+  }
+
+  .content h2 {
+    font-size: 30px;
+    color: #000000;
+  }
